@@ -1306,6 +1306,7 @@ background: #036;;
   .organisers__image {
     object-fit: contain;
     width: fit-content;
+    height: 100%;
   }
   .accordion__panel {
     padding: 24px;
@@ -1332,6 +1333,10 @@ background: #036;;
 
 /* ≥ 770 — «770 Страница конференции» */
 @media (min-width: 770px) {
+  .organisers__inner{
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
   .contacts__inner {
     padding-top: 64px;
     padding-bottom: 64px;
