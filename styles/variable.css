@@ -1,0 +1,15 @@
+:root {
+  --fon-grey: #b8dff5;
+  --click-blue: #27509b;
+  --blue-hover: #003366;
+  --text-000000: #000;
+  --text-ffffff: #fff;
+  --fon-fafaff: #fafaff;
+  --gradient-na-glavnuyu: linear-gradient(264.7deg, #369d62 0%, #195934 100%);
+  --click-blue-conf: #004a94;
+  --text: #101720;
+
+  --font-family: "Inter", sans-serif;
+  --second-family: "Oswald", sans-serif;
+  --third-family: "Manrope", sans-serif;
+}
