@@ -1442,6 +1442,17 @@ background: #036;;
 
 /* ≥ 1024 — «1024 Страница конференции» */
 @media (min-width: 1024px) {
+  .date-card{padding: 32px}
+  .accordion-session__summary{
+    padding: 24px 32px;
+  }
+  .session-text{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .accordion__panel{
+    padding: 24px 32px;
+  }
   .contacts__content {
     flex-direction: row;
     gap: 16px;
@@ -1582,6 +1593,9 @@ background: #036;;
 @media (min-width: 1920px) {
   .contacts__line {
     line-height: 18px;
+  }
+  .date-card{
+    gap: 24px;
   }
   .contacts__content {
     gap: 24px;
