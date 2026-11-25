@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -5,13 +6,10 @@
     <title>Конференции в Горном</title>
     <link rel="stylesheet" href="styles/keen-slider.min.css" />
     <link rel="stylesheet" href="styles/app.css" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=18e30ac7-d77d-4c00-93e0-b471a3cb83dc&amp;lang=ru_RU"
-      type="text/javascript"
-    ></script>
+    <link rel="stylesheet" href="styles/front.css" />
     <script src="js/keen-slider.min.js" defer></script>
     <script src="js/main.js" defer></script>
-    <script src="js/contacts.js" defer></script>
+    <script src="js/front.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -21,7 +19,7 @@
           href="/"
           aria-label="Конференции в Горном — на главную"
         >
-          <img class="site-header__brand-logo" src="images/logo.svg" />
+          <img class="site-header__brand-logo" src="1/images/logo.svg" />
         </a>
         <nav class="main-menu" aria-label="Главное меню">
           <a class="main-menu__link link" href="#"> Ближайшие мероприятия </a>
@@ -44,7 +42,7 @@
           href="/"
           aria-label="Горный университет"
         >
-          <img class="site-header__mining-emblem" src="images/gorny.svg" />
+          <img class="site-header__mining-emblem" src="1/images/gorny.svg" />
         </a>
       </div>
       <nav class="nav" aria-label="Мобильная навигация">
@@ -53,1304 +51,247 @@
         <a class="nav__link link" href="#"> Все мероприятия </a>
       </nav>
     </header>
-    <main class="conf-page" id="full-map">
-      <section class="container breadcrumb">
-        <div class="breadcrumbs-line">
-          <nav role="navigation" aria-labelledby="system-breadcrumb">
-            <ul>
-              <li>
-                <a class="breadcrumb__link link" href="/">Главная</a>
-              </li>
-              <li class="is-active">
-                <a href="#" aria-current="page"
-                  >Инновационные направления в&nbsp;проектировании
-                  горнодобывающих предприятий: Безопасное и&nbsp;эффективное
-                  освоение месторождений полезных ископаемых</a
-                >
-              </li>
-            </ul>
-          </nav>
+    <main class="front">
+      <section class="front__banner">
+        <img class="front__banner-image" src="images/front/banner.png" alt="" />
+        <div class="front__banner-content">
+          <h1 class="front__banner-title">Конференции</h1>
+          <p class="front__banner-subtitle">
+            в Санкт-Петербургском горном университете императрицы Екатерины II
+          </p>
         </div>
       </section>
-      <section class="hero">
-        <div class="container hero__inner">
-          <div class="hero__content">
-            <nav class="hero__lang" aria-label="Язык сайта">
-              <a class="hero__lang-link is-active" href="#" lang="ru">
-                <div class="hero__lang-wrapper">
-                  <img src="images/ru-icon.svg" alt="" />
-                  <span> Ru </span>
-                </div>
-              </a>
-              <a class="hero__lang-link" href="#" lang="en">
-                <div class="hero__lang-wrapper">
-                  <img src="images/en-icon.svg" alt="" />
-                  <span> En </span>
-                </div>
-              </a>
-            </nav>
-            <div class="hero__text">
-              <h1 class="hero__title">
-                Инновационные направления в проектировании горнодобывающих
-                предприятий: Безопасное и эффективное освоение месторождений
-                полезных ископаемых
-              </h1>
-              <p class="hero__subtitle">
-                XIII Международный научно-практический форум
-              </p>
-            </div>
-            <div class="hero__divider"></div>
-            <ul class="hero__info">
-              <li class="hero__info-item">
-                <img src="images/calendar.svg" alt="" />
-                <span> 29 марта 2026 </span>
-              </li>
-              <li class="hero__info-item">
-                <img src="images/location.svg" alt="" />
-                <span> Санкт-Петербург </span>
-              </li>
-            </ul>
-            <a class="hero__button btn-primary" href="#"> Регистрация </a>
-          </div>
-          <div class="hero__media">
-            <img class="hero__image" src="images/hero.png" alt="" />
-          </div>
-        </div>
-      </section>
-      <section class="main-info section-margin">
-        <div class="container announcement__inner">
-          <h2 class="block-title announcement__title">Важно!</h2>
-          <div class="announcement__divider"></div>
-          <div class="announcement__content">
-            <h3 class="announcement__subtitle">
-              Уважаемые участники Конференции!
-            </h3>
-            <div class="announcement__body">
-              <p class="announcement__text">
-                Мы благодарим вас за активную работу и сообщаем, что сертификаты
-                и дипломы на 13.02.26 находятся в печати. В течение следующей
-                недели мы вышлем вам на электронные адреса сканы дипломов и
-                сертификатов, а также отправим их по почте.
-              </p>
-              <p class="announcement__text">
-                Также напоминаем, что статьи и материалы для публикации следует
-                прислать до 28.02.2026 на почту land.spmi@yandex.ru.
-              </p>
-              <p class="announcement__text">
-                Желаем вам успехов в научной деятельности!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="accordeons section-margin">
-        <div class="accordeons__list">
-          <details class="container accordion">
-            <summary class="accordion__summary">
-              <h2 class="accordion__title">О конференции</h2>
-              <span class="accordion-icon-wrap">
-                <img class="accordion-icon" src="images/plus.svg" />
-              </span>
-            </summary>
-            <div class="accordion__panel">
-              <div class="accordion__block">
-                <h3 class="accordion__heading">О конференции</h3>
-                <div class="accordion__body">
-                  <p>
-                    Конкурс «Моя специальность» направлен на выявление и
-                    поддержку обучающихся Горного университета, способных
-                    самостоятельно решать исследовательские задачи и осмысленно
-                    связывать результаты своей работы с осваиваемой
-                    специальностью и будущей профессиональной деятельностью.
-                  </p>
-                  <p>
-                    Конкурс проводится в два этапа: заочный отборочный и очный
-                    заключительный. Для участия студенты представляют
-                    индивидуальные конкурсные работы, являющиеся результатом
-                    самостоятельной исследовательской и (или) научно-инженерной
-                    деятельности.
-                  </p>
-                  <p>
-                    Победителям и призёрам Конкурса предоставят возможность
-                    опубликовать свои работы в форме сборника научных трудов
-                    Конкурса, который будет размещён в Научной электронной
-                    библиотеке eLIBRARY.RU с индексацией в базе данных научного
-                    цитирования РИНЦ.
-                  </p>
-                </div>
+
+      <section class="front__events section-margin">
+        <div class="container front__events-inner">
+          <h2 class="block-title front__events-title">Ближайшие мероприятия</h2>
+          <ul class="front__events-list">
+            <li class="front__card">
+              <div class="front__card-media front__card-media--fade">
+                <img src="images/front/event.png" alt="" />
               </div>
-              <div class="accordion__block">
-                <h3 class="accordion__heading">Задачи</h3>
-                <div class="accordion__body">
-                  <ul>
-                    <li>
-                      Формирование у обучающихся осознанного понимания связи
-                      исследовательской деятельности с осваиваемой
-                      специальностью, её профессиональной значимостью и задачами
-                      соответствующей отрасли;
-                    </li>
-                    <li>
-                      Выявление обучающихся, демонстрирующих способность
-                      самостоятельно формулировать научную проблему, выбирать и
-                      обосновывать методы её решения, интерпретировать
-                      полученные результаты, аргументировать выводы и критически
-                      оценивать собственный вклад;
-                    </li>
-                    <li>
-                      Выявление перспективных исследовательских работ,
-                      обладающих потенциалом дальнейшего развития в
-                      научно-образовательной среде университета;
-                    </li>
-                    <li>
-                      Вовлечение обучающихся в научно-исследовательскую,
-                      инженерную и проектную деятельность университета в рамках
-                      реализации пилотного проекта «совершенствование высшего
-                      инженерного образования»;
-                    </li>
-                    <li>
-                      Создание условий для взаимодействия участников с
-                      кафедрами, научными центрами, лабораториями,
-                      преподавателями, исследователями и
-                      организациями-партнёрами университета;
-                    </li>
-                    <li>
-                      Отбор перспективных обучающихся для участия в
-                      международных научных и образовательных программах и
-                      стажировках, подготовки публикаций и формирования
-                      дальнейшей научной траектории, включая поступление в
-                      аспирантуру.
-                    </li>
-                  </ul>
+              <div class="front__card-body">
+                <div class="front__card-info">
+                  <div class="front__card-meta">
+                    <span class="front__card-meta-item">
+                      <img src="images/front/calendar-gold.svg" alt="" />
+                      11 января 2027
+                    </span>
+                    <span class="front__card-meta-item">
+                      <img src="images/front/clock-gold.svg" alt="" />
+                      16:00
+                    </span>
+                  </div>
+                  <h3 class="front__card-title">
+                    Аэрология и техносферная безопасность. Всероссийская научная
+                    конференция
+                  </h3>
                 </div>
+                <a class="front__btn-outline btn-outline" href="1/index.html">Подробнее</a>
               </div>
-            </div>
-          </details>
-          <details class="container accordion">
-            <summary class="accordion__summary">
-              <h2 class="accordion__title">Секционные заседания</h2>
-              <span class="accordion-icon-wrap">
-                <img class="accordion-icon" src="images/plus.svg" />
-              </span>
-            </summary>
-            <div class="accordion__panel--sessions">
-              <details class="accordion-session">
-                <summary class="accordion-session__summary">
-                  <h3 class="session__title">
-                    Пленарное заседание «Перспективы и проблемы развития
-                    минерально-сырьевого комплекса»
+            </li>
+            <li class="front__card">
+              <div class="front__card-media front__card-media--fade">
+                <img src="images/front/event.png" alt="" />
+              </div>
+              <div class="front__card-body">
+                <div class="front__card-info">
+                  <div class="front__card-meta">
+                    <span class="front__card-meta-item">
+                      <img src="images/front/calendar-gold.svg" alt="" />
+                      11–16 января 2027
+                    </span>
+                  </div>
+                  <h3 class="front__card-title">
+                    I Научно-практический семинар аспирантов, молодых учёных и
+                    студентов в области проектирования и строительства
                   </h3>
-                  <span class="session__icon-wrap">
-                    <img class="session__icon" src="images/arrow.svg" />
-                  </span>
-                </summary>
-                <div class="session-text">
-                  <p class="session__date">27 мая (МФК, Конгресс-холл)</p>
-                  <p style="font-weight: bold">Председатели:</p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Шабаров Аркадий Николаевич
-                    </span>
-                    , директор научного центра геомеханики и проблем горного
-                    производства, Санкт- Петербургский горный университет
-                    императрицы Екатерины II
-                  </p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Рассказов Игорь Юрьевич
-                    </span>
-                    , академик РАН, директор Хабаровский Федеральный
-                    исследовательский центр ДВО РАН
-                  </p>
                 </div>
-              </details>
-              <details class="accordion-session">
-                <summary class="accordion-session__summary">
-                  <h3 class="session__title">
-                    1. Геодинамическая безопасность и геомеханические проблемы
-                    освоения месторождений полезных ископаемых
-                  </h3>
-                  <span class="session__icon-wrap">
-                    <img class="session__icon" src="images/arrow.svg" />
-                  </span>
-                </summary>
-                <div class="session-text">
-                  <p class="session__date">27 мая (МФК, Конгресс-холл)</p>
-                  <p style="font-weight: bold">Председатели:</p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Шабаров Аркадий Николаевич
+                <a class="front__btn-outline btn-outline" href="#">Подробнее</a>
+              </div>
+            </li>
+            <li class="front__card">
+              <div class="front__card-media front__card-media--fade">
+                <img src="images/front/event.png" alt="" />
+              </div>
+              <div class="front__card-body">
+                <div class="front__card-info">
+                  <div class="front__card-meta">
+                    <span class="front__card-meta-item">
+                      <img src="images/front/calendar-gold.svg" alt="" />
+                      11 января – 16 февраля 2027
                     </span>
-                    , директор научного центра геомеханики и проблем горного
-                    производства, Санкт- Петербургский горный университет
-                    императрицы Екатерины II
-                  </p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Рассказов Игорь Юрьевич
-                    </span>
-                    , академик РАН, директор Хабаровский Федеральный
-                    исследовательский центр ДВО РАН
-                  </p>
-                </div>
-              </details>
-              <details class="accordion-session">
-                <summary class="accordion-session__summary">
-                  <h3 class="session__title">
-                    2,3. Разработка месторождений полезных ископаемых.
-                    Современные технологии производства буровзрывных работ
-                  </h3>
-                  <span class="session__icon-wrap">
-                    <img class="session__icon" src="images/arrow.svg" />
-                  </span>
-                </summary>
-                <div class="session-text">
-                  <p class="session__date">27 мая (МФК, Конгресс-холл)</p>
-                  <p style="font-weight: bold">Председатели:</p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Шабаров Аркадий Николаевич
-                    </span>
-                    , директор научного центра геомеханики и проблем горного
-                    производства, Санкт- Петербургский горный университет
-                    императрицы Екатерины II
-                  </p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Рассказов Игорь Юрьевич
-                    </span>
-                    , академик РАН, директор Хабаровский Федеральный
-                    исследовательский центр ДВО РАН
-                  </p>
-                </div>
-              </details>
-              <details class="accordion-session">
-                <summary class="accordion-session__summary">
-                  <h3 class="session__title">
-                    4. Энергообеспечение, электромеханика и энергоэффективность
-                    горного производства
-                  </h3>
-                  <span class="session__icon-wrap">
-                    <img class="session__icon" src="images/arrow.svg" />
-                  </span>
-                </summary>
-                <div class="session-text">
-                  <p class="session__date">27 мая (МФК, Конгресс-холл)</p>
-                  <p style="font-weight: bold">Председатели:</p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Шабаров Аркадий Николаевич
-                    </span>
-                    , директор научного центра геомеханики и проблем горного
-                    производства, Санкт- Петербургский горный университет
-                    императрицы Екатерины II
-                  </p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Рассказов Игорь Юрьевич
-                    </span>
-                    , академик РАН, директор Хабаровский Федеральный
-                    исследовательский центр ДВО РАН
-                  </p>
-                </div>
-              </details>
-              <details class="accordion-session">
-                <summary class="accordion-session__summary">
-                  <h3 class="session__title">
-                    5. Геомеханическое обеспечение и риски при разработке
-                    месторождений полезных ископаемых открытым способом
-                  </h3>
-                  <span class="session__icon-wrap">
-                    <img class="session__icon" src="images/arrow.svg" />
-                  </span>
-                </summary>
-                <div class="session-text">
-                  <p class="session__date">27 мая (МФК, Конгресс-холл)</p>
-                  <p style="font-weight: bold">Председатели:</p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Шабаров Аркадий Николаевич
-                    </span>
-                    , директор научного центра геомеханики и проблем горного
-                    производства, Санкт- Петербургский горный университет
-                    императрицы Екатерины II
-                  </p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Рассказов Игорь Юрьевич
-                    </span>
-                    , академик РАН, директор Хабаровский Федеральный
-                    исследовательский центр ДВО РАН
-                  </p>
-                </div>
-              </details>
-              <details class="accordion-session">
-                <summary class="accordion-session__summary">
-                  <h3 class="session__title">
-                    6. Проблемы размещения горнопромышленных отходов
-                  </h3>
-                  <span class="session__icon-wrap">
-                    <img class="session__icon" src="images/arrow.svg" />
-                  </span>
-                </summary>
-                <div class="session-text">
-                  <p class="session__date">27 мая (МФК, Конгресс-холл)</p>
-                  <p style="font-weight: bold">Председатели:</p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Шабаров Аркадий Николаевич
-                    </span>
-                    , директор научного центра геомеханики и проблем горного
-                    производства, Санкт- Петербургский горный университет
-                    императрицы Екатерины II
-                  </p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Рассказов Игорь Юрьевич
-                    </span>
-                    , академик РАН, директор Хабаровский Федеральный
-                    исследовательский центр ДВО РАН
-                  </p>
-                </div>
-              </details>
-              <details class="accordion-session">
-                <summary class="accordion-session__summary">
-                  <h3 class="session__title">
-                    7. Маркшейдерское обеспечение безопасного освоения
-                    месторождений полезных ископаемых и подземного пространства
-                  </h3>
-                  <span class="session__icon-wrap">
-                    <img class="session__icon" src="images/arrow.svg" />
-                  </span>
-                </summary>
-                <div class="session-text">
-                  <p class="session__date">27 мая (МФК, Конгресс-холл)</p>
-                  <p style="font-weight: bold">Председатели:</p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Шабаров Аркадий Николаевич
-                    </span>
-                    , директор научного центра геомеханики и проблем горного
-                    производства, Санкт- Петербургский горный университет
-                    императрицы Екатерины II
-                  </p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Рассказов Игорь Юрьевич
-                    </span>
-                    , академик РАН, директор Хабаровский Федеральный
-                    исследовательский центр ДВО РАН
-                  </p>
-                </div>
-              </details>
-              <details class="accordion-session">
-                <summary class="accordion-session__summary">
-                  <h3 class="session__title">
-                    8. Комплексная переработка природного и техногенного сырья
-                  </h3>
-                  <span class="session__icon-wrap">
-                    <img class="session__icon" src="images/arrow.svg" />
-                  </span>
-                </summary>
-                <div class="session-text">
-                  <p class="session__date">27 мая (МФК, Конгресс-холл)</p>
-                  <p style="font-weight: bold">Председатели:</p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Шабаров Аркадий Николаевич
-                    </span>
-                    , директор научного центра геомеханики и проблем горного
-                    производства, Санкт- Петербургский горный университет
-                    императрицы Екатерины II
-                  </p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Рассказов Игорь Юрьевич
-                    </span>
-                    , академик РАН, директор Хабаровский Федеральный
-                    исследовательский центр ДВО РАН
-                  </p>
-                </div>
-              </details>
-              <details class="accordion-session">
-                <summary class="accordion-session__summary">
-                  <h3 class="session__title">9. Экономика недропользования</h3>
-                  <span class="session__icon-wrap">
-                    <img class="session__icon" src="images/arrow.svg" />
-                  </span>
-                </summary>
-                <div class="session-text">
-                  <p class="session__date">27 мая (МФК, Конгресс-холл)</p>
-                  <p style="font-weight: bold">Председатели:</p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Шабаров Аркадий Николаевич
-                    </span>
-                    , директор научного центра геомеханики и проблем горного
-                    производства, Санкт- Петербургский горный университет
-                    императрицы Екатерины II
-                  </p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Рассказов Игорь Юрьевич
-                    </span>
-                    , академик РАН, директор Хабаровский Федеральный
-                    исследовательский центр ДВО РАН
-                  </p>
-                </div>
-              </details>
-              <details class="accordion-session">
-                <summary class="accordion-session__summary">
-                  <h3 class="session__title">
-                    10. Гидрогеологическое обеспечение освоения месторождений
+                  </div>
+                  <h3 class="front__card-title">
+                    Инновационные направления в проектировании горнодобывающих
+                    предприятий: Безопасное и эффективное освоение месторождений
                     полезных ископаемых
                   </h3>
-                  <span class="session__icon-wrap">
-                    <img class="session__icon" src="images/arrow.svg" />
-                  </span>
-                </summary>
-                <div class="session-text">
-                  <p class="session__date">27 мая (МФК, Конгресс-холл)</p>
-                  <p style="font-weight: bold">Председатели:</p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Шабаров Аркадий Николаевич
-                    </span>
-                    , директор научного центра геомеханики и проблем горного
-                    производства, Санкт- Петербургский горный университет
-                    императрицы Екатерины II
-                  </p>
-                  <p>
-                    <span style="font-weight: bold">
-                      Рассказов Игорь Юрьевич
-                    </span>
-                    , академик РАН, директор Хабаровский Федеральный
-                    исследовательский центр ДВО РАН
-                  </p>
                 </div>
-              </details>
-            </div>
-          </details>
-          <details class="container accordion">
-            <summary class="accordion__summary">
-              <span class="accordion__title"> Важные даты </span>
-              <span class="accordion-icon-wrap">
-                <img class="accordion-icon" src="images/plus.svg" />
-              </span>
-            </summary>
-            <div class="accordion__panel--dates">
-              <div class="date-card">
-                <p class="date-card__date">до 5 октября 2025 года</p>
-                <p class="date-card__text">Регистрация участников</p>
+                <a class="front__btn-outline btn-outline" href="#">Подробнее</a>
               </div>
-              <div class="date-card">
-                <p class="date-card__date">до 10 октября 2025 года</p>
-                <p class="date-card__text">
-                  Подтверждение очного участия Оргкомитетом
-                </p>
-              </div>
-              <div class="date-card">
-                <p class="date-card__date">10 октября 2025 года</p>
-                <p class="date-card__text">Оформление приглашений и виз</p>
-              </div>
-              <div class="date-card">
-                <p class="date-card__date">28 октября 2025 года</p>
-                <p class="date-card__text">Заезд и регистрация участников</p>
-              </div>
-              <div class="date-card">
-                <p class="date-card__date">29-31 октября 2025 года</p>
-                <p class="date-card__text">Рабочие дни</p>
-              </div>
-              <div class="date-card">
-                <p class="date-card__date">01 ноября 2025 года</p>
-                <p class="date-card__text">Отъезд участников</p>
-              </div>
-            </div>
-          </details>
-          <details class="container accordion">
-            <summary class="accordion__summary">
-              <span class="accordion__title"> Условия и форма участия </span>
-              <span class="accordion-icon-wrap">
-                <img class="accordion-icon" src="images/plus.svg" />
-              </span>
-            </summary>
-          </details>
-        </div>
-      </section>
-      <section class="documents section-margin">
-        <div class="container documents__inner">
-          <h2 class="block-title documents__title">Документы</h2>
-          <ul class="documents__list">
-            <li class="documents__item">
-              <a class="documents__link" href="#">
-                <svg
-                  width="15"
-                  height="15"
-                  viewbox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke="#004A94"
-                  ></path>
-                  <path
-                    d="M0.5 11.5V14.5H14.5V11.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke="#004A94"
-                  ></path>
-                </svg>
-                <span class="documents__link-text"> Положение о конкурсе </span>
-              </a>
             </li>
-            <li class="documents__item">
-              <a class="documents__link" href="#">
-                <svg
-                  width="15"
-                  height="15"
-                  viewbox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke="#004A94"
-                  ></path>
-                  <path
-                    d="M0.5 11.5V14.5H14.5V11.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke="#004A94"
-                  ></path>
-                </svg>
-                <span class="documents__link-text">
-                  Информационное письмо
-                </span>
-              </a>
-            </li>
-            <li class="documents__item">
-              <a class="documents__link" href="#">
-                <svg
-                  width="15"
-                  height="15"
-                  viewbox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke="#004A94"
-                  ></path>
-                  <path
-                    d="M0.5 11.5V14.5H14.5V11.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke="#004A94"
-                  ></path>
-                </svg>
-                <span class="documents__link-text"> Требования к НИР </span>
-              </a>
-            </li>
-            <li class="documents__item">
-              <a class="documents__link" href="#">
-                <svg
-                  width="15"
-                  height="15"
-                  viewbox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke="#004A94"
-                  ></path>
-                  <path
-                    d="M0.5 11.5V14.5H14.5V11.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke="#004A94"
-                  ></path>
-                </svg>
-                <span class="documents__link-text">
-                  Образец титульного листа НИР (.docx)
-                </span>
-              </a>
+            <li class="front__card">
+              <div class="front__card-media front__card-media--fade">
+                <img src="images/front/event.png" alt="" />
+              </div>
+              <div class="front__card-body">
+                <div class="front__card-info">
+                  <div class="front__card-meta">
+                    <span class="front__card-meta-item">
+                      <img src="images/front/calendar-gold.svg" alt="" />
+                      11 января 2027
+                    </span>
+                    <span class="front__card-meta-item">
+                      <img src="images/front/clock-gold.svg" alt="" />
+                      16:00
+                    </span>
+                  </div>
+                  <h3 class="front__card-title">
+                    Актуальные проблемы недропользования
+                  </h3>
+                </div>
+                <a class="front__btn-outline btn-outline" href="#">Подробнее</a>
+              </div>
             </li>
           </ul>
+          <div class="front__events-actions">
+            <a class="btn-primary" href="#">Все мероприятия</a>
+            <a class="front__btn-outline btn-outline btn-arrow" href="#">
+              Календарь мероприятий
+            </a>
+          </div>
         </div>
       </section>
-      <section class="partners section-margin">
-        <div class="container partners__inner">
-          <h2 class="block-title partners__title">Информационные партнёры</h2>
-          <div class="partners__slider keen-slider">
-            <div class="keen-slider__slide partners__slide">
-              <div class="partners__card">
-                <a href="#" class="partners__link"
-                  ><img
-                    class="partners__logo partners__logo--1"
-                    src="images/partner-1.png"
-                    alt="Информационный партнёр"
-                /></a>
-              </div>
-            </div>
-            <div class="keen-slider__slide partners__slide">
-              <div class="partners__card">
-                <a href="#" class="partners__link"
-                  ><img
-                    class="partners__logo partners__logo--2"
-                    src="images/partner-2.png"
-                    alt="Информационный партнёр"
-                /></a>
-              </div>
-            </div>
-            <div class="keen-slider__slide partners__slide">
-              <div class="partners__card">
-                <a href="#" class="partners__link"
-                  ><img
-                    class="partners__logo partners__logo--3"
-                    src="images/partner-3.png"
-                    alt="Информационный партнёр"
-                /></a>
-              </div>
-            </div>
-            <div class="keen-slider__slide partners__slide">
-              <div class="partners__card">
-                <a href="#" class="partners__link"
-                  ><img
-                    class="partners__logo partners__logo--4"
-                    src="images/partner-4.png"
-                    alt="Информационный партнёр"
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="partners__nav">
-            <button
-              class="partners__nav-button partners__nav-button--prev"
-              type="button"
-              aria-label="Предыдущий партнёр"
-              data-partners-prev
-            >
-              <svg
-                width="10"
-                height="8"
-                viewbox="0 0 10 8"
-                fill="none"
-                aria-hidden="true"
+
+      <section class="front__articles section-margin">
+        <div class="container front__articles-inner">
+          <div class="front__head">
+            <h2 class="block-title">Новости</h2>
+            <div class="front__nav">
+              <button
+                class="nav-button nav-button--prev"
+                type="button"
+                aria-label="Предыдущая статья"
+                data-articles-prev
               >
-                <path
-                  d="M0 4h10M10 4 6 8M10 4 6 0"
-                  stroke="currentColor"
-                ></path>
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" aria-hidden="true">
+                <path d="M0 4h10M10 4 6 8M10 4 6 0" stroke="currentColor"></path>
               </svg>
-            </button>
-            <button
-              class="partners__nav-button partners__nav-button--next"
-              type="button"
-              aria-label="Следующий партнёр"
-              data-partners-next
-            >
-              <svg
-                width="10"
-                height="8"
-                viewbox="0 0 10 8"
-                fill="none"
-                aria-hidden="true"
+              </button>
+              <button
+                class="nav-button nav-button--next"
+                type="button"
+                aria-label="Следующая статья"
+                data-articles-next
               >
-                <path
-                  d="M0 4h10M10 4 6 8M10 4 6 0"
-                  stroke="currentColor"
-                ></path>
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" aria-hidden="true">
+                <path d="M0 4h10M10 4 6 8M10 4 6 0" stroke="currentColor"></path>
               </svg>
-            </button>
+              </button>
+            </div>
           </div>
+          <div class="front__articles-slider keen-slider">
+            <article class="keen-slider__slide front__article">
+              <img
+                class="front__article-image"
+                src="images/front/article.png"
+                alt=""
+              />
+              <p class="front__article-date">23.03.2025</p>
+              <h3 class="front__article-title">Победители конференции</h3>
+              
+            </article>
+            <article class="keen-slider__slide front__article">
+              <img
+                class="front__article-image"
+                src="images/front/article.png"
+                alt=""
+              />
+              <p class="front__article-date">23.03.2025</p>
+              <h3 class="front__article-title">Победители конференции</h3>
+              
+            </article>
+            <article class="keen-slider__slide front__article">
+              <img
+                class="front__article-image"
+                src="images/front/article.png"
+                alt=""
+              />
+              <p class="front__article-date">23.03.2025</p>
+              <h3 class="front__article-title">Победители конференции</h3>
+              
+            </article>
+            <article class="keen-slider__slide front__article">
+              <img
+                class="front__article-image"
+                src="images/front/article.png"
+                alt=""
+              />
+              <p class="front__article-date">23.03.2025</p>
+              <h3 class="front__article-title">Победители конференции</h3>
+              
+            </article>
+            
+          </div>
+          <a class="btn-primary" href="#">Все новости</a>
         </div>
       </section>
-      <section class="archive section-margin">
-        <div class="container archive__inner">
-          <h2 class="block-title archive__title">Архив прошлых лет</h2>
-          <div class="archive__list">
-            <article class="archive__card">
-              <div class="archive__card-inner">
-                <h3 class="archive__year">2024</h3>
-                <ul class="archive__files">
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text">
-                        Сборник тезисов. Том 1
-                      </span>
-                    </a>
-                  </li>
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text">
-                        Сборник тезисов. Том 2
-                      </span>
-                    </a>
-                  </li>
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text"> Победители </span>
-                    </a>
-                  </li>
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text"> Победители </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-            <article class="archive__card">
-              <div class="archive__card-inner">
-                <h3 class="archive__year">2022</h3>
-                <ul class="archive__files">
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text">
-                        Сборник тезисов. Том 1
-                      </span>
-                    </a>
-                  </li>
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text">
-                        Сборник тезисов. Том 2
-                      </span>
-                    </a>
-                  </li>
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text"> Победители </span>
-                    </a>
-                  </li>
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text"> Победители </span>
-                    </a>
-                  </li>
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text"> Победители </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-            <article class="archive__card">
-              <div class="archive__card-inner">
-                <h3 class="archive__year">2021</h3>
-                <ul class="archive__files">
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text">
-                        Сборник тезисов. Том 1
-                      </span>
-                    </a>
-                  </li>
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text">
-                        Сборник тезисов. Том 2
-                      </span>
-                    </a>
-                  </li>
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text"> Победители </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-            <article class="archive__card">
-              <div class="archive__card-inner">
-                <h3 class="archive__year">2019</h3>
-                <ul class="archive__files">
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text">
-                        Сборник тезисов. Том 1
-                      </span>
-                    </a>
-                  </li>
-                  <li class="archive__file">
-                    <a class="archive__file-link" href="#">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewbox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.5 11.5V0.5M12.5 6.36381L7.5 11.5L2.5 6.36381"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                        <path
-                          d="M0.5 11.5V14.5H14.5V11.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke="#004A94"
-                        ></path>
-                      </svg>
-                      <span class="archive__file-text">
-                        Сборник тезисов. Том 2
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </article>
+
+      <section class="front__conferences section-margin">
+        <div class="container front__conferences-inner">
+          <div class="front__conf-head">
+            <h2 class="block-title">Конференции международного уровня</h2>
+            <div class="front__nav">
+              <button
+                class="nav-button nav-button--prev"
+                type="button"
+                aria-label="Предыдущая конференция"
+                data-conferences-prev
+              >
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" aria-hidden="true">
+                <path d="M0 4h10M10 4 6 8M10 4 6 0" stroke="currentColor"></path>
+              </svg>
+              </button>
+              <button
+                class="nav-button nav-button--next"
+                type="button"
+                aria-label="Следующая конференция"
+                data-conferences-next
+              >
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" aria-hidden="true">
+                <path d="M0 4h10M10 4 6 8M10 4 6 0" stroke="currentColor"></path>
+              </svg>
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="organisers section-margin">
-        <div class="container organisers__inner">
-          <h2 class="block-title organisers__title">Организаторы</h2>
-          <div class="organisers__slider keen-slider">
-            <div class="keen-slider__slide organisers__slide">
-              <div class="organisers__card">
-                <div class="organisers__image-wrap">
-                  <img
-                    class="organisers__image"
-                    src="images/organiser-1.svg"
-                    alt="Логотип консорциума университетов «Недра»"
-                  />
-                </div>
-                <div class="organisers__content">
-                  <div class="organisers__text">
-                    <h3 class="organisers__name">
-                      <a href="#" class="organisers__name"
-                        >Консорциум университетов «Недра»</a
-                      >
-                    </h3>
-                    <p class="organisers__desc">
-                      Организация объединяет более 100 вузов, чьи направления
-                      обучения связаны с подготовкой специалистов для
-                      минерально-сырьевого комплекса России. Цель консорциума —
-                      рост уровня адаптации высших учебных заведений к запросам
-                      рынка труда и дальнейшая интеграция крупных профильных
-                      компаний, органов государственной власти и университетов.
-                    </p>
+          <div class="front__conferences-slider keen-slider">
+            <article class="keen-slider__slide front__card front__conf-card">
+              <div class="front__card-media">
+                <img src="images/front/conference.png" alt="" />
+              </div>
+              <div class="front__card-body">
+                <div class="front__card-info">
+                  <div class="front__card-meta">
+                    <span class="front__card-meta-item">
+                      <img src="images/front/calendar-gold.svg" alt="" />
+                      12–15 октября 2026
+                    </span>
                   </div>
+                  <h3 class="front__conference-title">
+                    Второй российско-африканский сырьевой диалог
+                  </h3>
                 </div>
+                <a class="btn-primary btn-arrow front__conferences--btn" href="#">
+                  Перейти на сайт
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="organisers__nav">
-            <button
-              class="organisers__nav-button organisers__nav-button--prev"
-              type="button"
-              aria-label="Предыдущий организатор"
-              data-organisers-prev
-            >
-              <svg
-                width="10"
-                height="8"
-                viewbox="0 0 10 8"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M0 4h10M10 4 6 8M10 4 6 0"
-                  stroke="currentColor"
-                ></path>
-              </svg>
-            </button>
-            <button
-              class="organisers__nav-button organisers__nav-button--next"
-              type="button"
-              aria-label="Следующий организатор"
-              data-organisers-next
-            >
-              <svg
-                width="10"
-                height="8"
-                viewbox="0 0 10 8"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M0 4h10M10 4 6 8M10 4 6 0"
-                  stroke="currentColor"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-      <section class="contacts section-margin">
-        <div class="container contacts__inner">
-          <h2 class="block-title contacts__title">Контакты</h2>
-          <div class="contacts__content">
-            <div class="contacts__group">
-              <h3 class="contacts__subtitle">Организационный комитет</h3>
-              <div class="contacts__person">
-                <p class="contacts__person-name">Екатерина Вторая</p>
-                <p class="contacts__person-role">
-                  Императрица и Самодержица Всероссийская
-                </p>
-              </div>
-              <a class="contacts__line link" href="tel:+78120000000">
-                <svg
-                  width="16"
-                  height="16"
-                  viewbox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.08562 0.742847C3.79728 0.0344121 3.477 0.0171971 3.20463 0.0171971C2.96418 -3.31813e-07 2.70684 0 2.43447 0C2.179 0 1.74602 0.103219 1.37784 0.535364C1.00873 0.966499 0 1.98564 0 4.07451C0 6.16446 1.40978 8.18447 1.60232 8.46076C1.79391 8.73705 4.32605 13.1567 8.33273 14.867C11.6651 16.2829 12.3386 16.0066 13.0598 15.9195C13.7802 15.8336 15.3835 14.9014 15.7197 13.8995C16.0401 12.9158 16.0401 12.0525 15.9442 11.8793C15.8483 11.7074 15.5751 11.6031 15.191 11.3785C14.79 11.1719 12.8673 10.1356 12.4991 9.99705C12.13 9.85934 11.8736 9.79048 11.6172 10.2045C11.3608 10.6366 10.6075 11.5859 10.3681 11.8622C10.1427 12.1385 9.90313 12.1729 9.51812 11.9655C9.11801 11.7589 7.85187 11.3096 6.34537 9.85933C5.17509 8.73602 4.38992 7.3383 4.14947 6.92447C3.92594 6.4923 4.11754 6.26757 4.32605 6.06014C4.50263 5.87087 4.7271 5.56015 4.91963 5.31829C5.11119 5.0754 5.17509 4.88613 5.31975 4.60984C5.44755 4.33358 5.38365 4.07451 5.28779 3.86805C5.19114 3.67778 4.43876 1.58891 4.08562 0.742847Z"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    fill="#004A94"
-                  ></path>
-                </svg>
-                <span class="contacts__line-text"> +7 812 ХХХ ХХ ХХ </span>
-              </a>
-              <a
-                class="contacts__line contacts__line--email"
-                href="mailto:youthafrica@spmi.ru"
-              >
-                <svg
-                  width="16"
-                  height="12"
-                  viewbox="0 0 16 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16 1.74542L11.6267 5.89078L10.3467 6.87257C8.96 7.96346 7.04 7.96346 5.65333 6.87257L4.48 5.89078L0 1.74542C0.106667 0.763619 0.96 0 1.92 0H14.08C15.04 0 15.8933 0.763619 16 1.74542Z"
-                    fill="#004A94"
-                  ></path>
-                  <path
-                    d="M3.30667 6.32694L0 9.27233V3.27246L3.30667 6.32694Z"
-                    fill="#004A94"
-                  ></path>
-                  <path
-                    d="M16 10.7998C15.8933 11.5634 15.36 11.9998 14.6133 11.9998H1.38667C0.64 11.9998 0.106667 11.4544 0 10.7998L4.05333 7.09082L4.90667 7.85444C6.72 9.27259 9.17333 9.27259 10.88 7.85444L11.7333 7.09082L16 10.7998Z"
-                    fill="#004A94"
-                  ></path>
-                  <path
-                    d="M16 3.27246V9.27233L12.6934 6.32694L16 3.27246Z"
-                    fill="#004A94"
-                  ></path>
-                </svg>
-                <span class="contacts__line-text"> youthafrica@spmi.ru </span>
-              </a>
-            </div>
-            <div class="contacts__group">
-              <h3 class="contacts__subtitle">Место проведения</h3>
-              <div class="contacts__line">
-                <svg
-                  width="16"
-                  height="16"
-                  viewbox="0 0 16 16"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M7.99707 0C11.5849 0.000213909 14.5 2.81776 14.5 6.29297C14.4999 7.71564 14.0124 9.02805 13.1904 10.082C12.3683 11.1361 8.00293 16 8.00293 16C7.99683 15.9932 3.63108 11.1354 2.80957 10.082C1.98758 9.02805 1.50007 7.71564 1.5 6.29297C1.5 2.81763 4.40906 0 7.99707 0ZM8 3C6.34315 3 5 4.34315 5 6C5 7.65685 6.34315 9 8 9C9.65685 9 11 7.65685 11 6C11 4.34315 9.65685 3 8 3Z"
-                    fill="#C8A06F"
-                  ></path>
-                </svg>
-                <span>
-                  Россия, 199106, г. Санкт-Петербург, Васильевский остров, 21-я
-                  линия, д. 2, ауд. 1205 УЦ №1
-                </span>
-              </div>
-              <div class="contacts__line">
-                <svg
-                  width="16"
-                  height="12"
-                  viewbox="0 0 16 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.3014 0C5.3014 0 4.06106 0.398221 3.09714 1.11755C2.6543 1.44802 2.31011 1.73995 1.80162 2.28658C-0.463895 4.86061 -0.628754 8.60754 1.51154 11.3006C1.79285 11.6624 2.12023 12 2.12023 12H5.91938L6.37613 11.4401C6.37613 11.4401 4.98686 11.1868 3.76267 10.0422C1.85662 8.22829 1.89371 6.24635 2.09713 5.16567C2.10965 5.09918 2.23004 4.00103 3.20696 2.80177C3.40435 2.55946 3.75161 2.23754 4.01131 2.14289C4.2599 2.06882 4.54226 2.13106 4.70266 2.49817L7.6798 11.664H8H8.3202L11.2973 2.49817C11.4577 2.13106 11.7401 2.06882 11.9887 2.14289C12.2484 2.23754 12.5956 2.55946 12.793 2.80177C13.77 4.00103 13.8903 5.09918 13.9029 5.16567C14.1063 6.24635 14.1434 8.22829 12.2373 10.0422C11.0131 11.1868 9.62387 11.4401 9.62387 11.4401L10.0806 12H13.8798C13.8798 12 14.2072 11.6624 14.4885 11.3006C16.6288 8.60754 16.4639 4.86061 14.1984 2.28658C13.6899 1.73995 13.3457 1.44802 12.9029 1.11755C11.9389 0.398221 10.6986 0 10.6986 0L8 8.32185L5.3014 0Z"
-                    fill="#204982"
-                  ></path>
-                </svg>
-                <span> «Горный институт», 10 минут пешком </span>
-              </div>
-              <div id="map"></div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer section-margin">
       <div class="container footer__inner">
         <div class="footer__content">
@@ -1368,8 +309,7 @@
         <div class="footer__bottom">
           <div class="footer__divider"></div>
           <p class="footer__copyright">
-            © 2026 Санкт-Петербургский горный университет императрицы Екатерины
-            II
+            © 2026 Санкт-Петербургский горный университет императрицы Екатерины II
           </p>
         </div>
       </div>

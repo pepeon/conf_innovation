@@ -12,4 +12,29 @@
   --font-family: "Inter", sans-serif;
   --second-family: "Oswald", sans-serif;
   --third-family: "Manrope", sans-serif;
+  --container-gutter: 12px;
+}
+
+@media (min-width: 500px) {
+  :root {
+    --container-gutter: 12px;
+  }
+}
+@media (min-width: 770px) {
+  :root {
+    --container-gutter: 16px;
+  }
+}
+@media (min-width: 1024px) {
+
+}
+@media (min-width: 1400px) {
+  :root {
+    --container-gutter: 48px;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --container-gutter: 64px;
+  }
 }

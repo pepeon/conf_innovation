@@ -1,0 +1,440 @@
+/* =========================================================
+   Главная страница: баннер, мероприятия, статьи, конференции
+   Базовые классы (container, block-title, btn-primary, section-margin)
+   берутся из app.css
+   ========================================================= */
+
+.front__banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.front__banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 51, 102, 0) 50%, #036 100%);
+  z-index: 1;
+}
+
+.front__banner-image {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: 100% 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.front__banner-content {
+  position: absolute;
+  top: 286px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 2;
+  max-width: 316px;
+}
+
+.front__banner-title,
+.front__banner-subtitle {
+  margin: 0;
+}
+
+.front__banner-title {
+  font-family: var(--second-family), sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.front__banner-subtitle {
+  font-family: var(--font-family), sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #e4ceb3;
+  letter-spacing: 2%;
+}
+
+.front__events-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-block: 32px;
+  background: linear-gradient(90deg, #f3e0c7 0%, #fff 100%);
+}
+
+.front__events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.front__events-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.front__card {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 2px 2px 4px 0 rgba(172, 186, 209, 0.25);
+}
+
+.front__card-media {
+  position: relative;
+}
+
+.front__card-media img {
+  width: 100%;
+  aspect-ratio: 328 / 219;
+  object-fit: cover;
+  object-position: center right;
+  max-height: 364px;
+  border-radius: 16px;
+}
+
+.front__card-media--fade::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  pointer-events: none;
+}
+
+.front__card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px 16px 32px;
+}
+
+.front__card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.front__card-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.front__card-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-family), sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #585858;
+}
+
+.front__card-meta-item img {
+  flex-shrink: 0;
+}
+
+.front__conference-title,
+.front__card-title {
+  margin: 0;
+  font-family: var(--second-family), sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+
+
+.front__conferences--btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.front__articles-inner,
+.front__conferences-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-block: 32px;
+  border-radius: 16px;
+}
+
+.front__articles-inner {
+  background: #fff;
+  box-shadow: 2px 2px 4px 0 rgba(172, 186, 209, 0.25);
+}
+
+.front__conferences-inner {
+  background: #d3e0f6;
+}
+
+.front__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.front__conf-head {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.front__nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.front__conf-head .front__nav {
+  gap: 24px;
+}
+
+.front__nav-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.front__nav-button img {
+  width: 48px;
+  height: 48px;
+}
+
+.front__nav-button:hover {
+  opacity: 0.7;
+}
+
+.front__article {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.front__article-image {
+  width: 100%;
+  aspect-ratio: 328 / 185;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 2px 2px 4px 0 rgba(172, 186, 209, 0.25);
+}
+
+.front__article-date,
+.front__article-title {
+  margin: 0;
+  font-family: var(--font-family), sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.front__article-date {
+  color: #7a7a7a;
+}
+
+.front__article-title {
+  color: var(--text);
+}
+
+.front__article .btn-primary {
+  margin-top: 8px;
+}
+
+.front__conf-card .front__card-info {
+  gap: 16px;
+}
+
+.front__btn-outline img,
+.front__conferences--btn img {
+  width: 10px;
+  height: 10px;
+}
+
+@media (min-width: 500px) {
+  .front__banner::after {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 51, 102, 0) 50%,
+      rgba(0, 51, 102, 0.2) 100%
+    );
+  }
+  .front__conferences-inner {
+    padding-block: 48px;
+  }
+}
+@media (min-width: 770px) {
+  .front__conference-title {
+    font-size: 18px;
+  }
+  .front__conferences-inner {
+    gap: 24px;
+  }
+  .front__card-body a {
+    margin-top: auto;
+  }
+  .front__conf-head {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .front__articles-inner {
+    padding-block: 48px;
+  }
+  .front__card-info {
+    gap: 16px;
+  }
+  .front__events-inner {
+    gap: 24px;
+  }
+  .front__card {
+    display: flex;
+    gap: 16px;
+    flex-direction: row-reverse;
+  }
+  .front__card-title {
+    font-size: 18px;
+  }
+  .front__btn-outline {
+    margin-top: auto;
+  }
+  .front__events-list {
+    gap: 32px;
+  }
+  .front__card > * {
+    width: calc(50% - 8px);
+  }
+  .front__card-body {
+    padding: 24px;
+    padding-right: 0px;
+  }
+  .front__card-media img {
+    max-height: 238px;
+  }
+  .front__banner-image {
+    height: 401px;
+  }
+  .front__banner-content {
+    top: 50%;
+    transform: translateY(-50%);
+    left: var(--container-gutter);
+    right: var(--container-gutter);
+    gap: 16px;
+  }
+  .front__banner::after {
+    background: initial;
+  }
+  .front__events-inner {
+    padding-block: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  .front__conferences--btn {
+    padding: 20px 32px;
+    gap: 8px;
+    letter-spacing: -0.12px;
+  }
+  .front__conference-title {
+    font-size: 32px;
+  }
+  .front__card-title {
+    font-size: 24px;
+  }
+  .front__articles-inner {
+    gap: 24px;
+  }
+
+  .front__card-body {
+    padding-block: 32px;
+  }
+  .front__card-media img {
+    max-height: 322px;
+  }
+  .btn-outline {
+    padding: 16px 24px;
+    font-size: 16px;
+    letter-spacing: -1%;
+  }
+}
+@media (min-width: 1400px) {
+      .front__conferences-inner {
+        padding-block: 80px;
+        gap: 40px;
+    }
+  .front__articles-inner{
+    padding-block: 80px;
+    gap: 40px;
+  }
+  .front__card-media img{
+    height: 408px;
+    max-height: 557px;
+  }
+      .front__events-inner {
+        padding-block: 80px;
+    }
+        .front__card-body {
+        padding-block: 48px;
+        padding-left: 48px;
+    }
+        .front__card-title {
+        font-size: 32px;
+    }
+  .front__banner-image {
+    height: 720px;
+  }
+  .front__banner-content{
+    left: var(--container-gutter);
+    right: var(--container-gutter);
+    max-width: 485px;
+  }
+  .front__banner-title{
+    font-size: 80px;
+  }
+  .front__banner-subtitle{
+    font-size: 32px;
+    letter-spacing: 4%;
+  }
+}
+@media (min-width: 1920px) {
+  .front__card{
+    gap: 24px;
+  }
+  .front__banner-content{
+    left: var(--container-gutter);
+    right: var(--container-gutter);
+  }
+      .front__card-body {
+        padding: 64px;
+    }
+        .front__card-title {
+        font-size: 40px;
+    }
+        .front__card-media img {
+        height: 557px;
+    }
+        .front__conference-title {
+        font-size: 40px;
+    }
+}

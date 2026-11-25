@@ -39,6 +39,42 @@ img {
 .btn-primary:hover{
 background: #036;;
 }
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 12px 18px;
+  border: 1px solid #004a94;
+  border-radius: 32px;
+  box-shadow: 2px 2px 4px 0 rgba(172, 186, 209, 0.25);
+  color: #004a94;
+  font-family: var(--font-family), sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 107%;
+  letter-spacing: -2%;
+  text-decoration: none;
+  transition: ease 0.2s;
+}
+
+
+.btn-outline:hover {
+  color: #FFF;
+  background: var(--blue-hover);
+}
+.btn-arrow::after {
+  content: "";
+  display: inline-block;
+  width: 10px;  
+  height: 10px; 
+  flex-shrink: 0;
+  
+  background-color: currentColor; 
+  
+  -webkit-mask: url("../images/front/arrow-external-blue.svg") no-repeat center / contain;
+  mask: url("../images/front/arrow-external-blue.svg") no-repeat center / contain;
+}
 .container {
   --container-gutter: 12px;
   max-width: 1824px;
@@ -47,6 +83,7 @@ background: #036;;
   padding-right: var(--container-gutter);
   border-radius: 16px;
 }
+
 .link:hover,
 .footer a:hover,
 .contacts a:hover,
@@ -767,7 +804,7 @@ background: #036;;
   gap: 16px;
 }
 
-.partners__nav-button {
+.nav-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -781,17 +818,17 @@ background: #036;;
   cursor: pointer;
   transition: background 0.2s;
 }
-.partners__nav-button:hover svg {
+.nav-button:hover svg {
   color: #fff;
 }
-.partners__nav-button svg {
+.nav-button svg {
   transition: color 0.2s;
 }
-.partners__nav-button:hover {
+.nav-button:hover {
   background: var(--blue-hover);
 }
 
-.partners__nav-button--prev svg {
+.nav-button--prev svg {
   transform: rotate(180deg);
 }
 
@@ -975,7 +1012,7 @@ background: #036;;
   gap: 16px;
 }
 
-.organisers__nav-button {
+.nav-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -990,17 +1027,17 @@ background: #036;;
   cursor: pointer;
 }
 
-.organisers__nav-button--prev svg {
+.nav-button--prev svg {
   transform: rotate(180deg);
 }
 
-.organisers__nav-button:hover svg {
+.nav-button:hover svg {
   color: #fff;
 }
-.organisers__nav-button svg {
+.nav-button svg {
   transition: color 0.2s;
 }
-.organisers__nav-button:hover {
+.nav-button:hover {
   background: var(--blue-hover);
 }
 
