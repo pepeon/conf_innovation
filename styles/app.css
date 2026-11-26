@@ -69,7 +69,6 @@ background: #036;;
   width: 10px;  
   height: 10px; 
   flex-shrink: 0;
-  
   background-color: currentColor; 
   
   -webkit-mask: url("../images/front/arrow-external-blue.svg") no-repeat center / contain;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Конференции в Горном</title>
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="styles/keen-slider.min.css" />
     <link rel="stylesheet" href="styles/app.css" />
     <link rel="stylesheet" href="styles/front.css" />
@@ -22,9 +23,9 @@
           <img class="site-header__brand-logo" src="1/images/logo.svg" />
         </a>
         <nav class="main-menu" aria-label="Главное меню">
-          <a class="main-menu__link link" href="#"> Ближайшие мероприятия </a>
-          <a class="main-menu__link link" href="#"> Новости </a>
-          <a class="main-menu__link link" href="#"> Все мероприятия </a>
+          <a class="main-menu__link link" href="#events"> Ближайшие мероприятия </a>
+          <a class="main-menu__link link" href="#news"> Новости </a>
+          <a class="main-menu__link link" href="events.html"> Все мероприятия </a>
         </nav>
         <button
           class="site-header__burger"
@@ -63,31 +64,49 @@
       </section>
 
       <section class="front__events section-margin">
-        <div class="container front__events-inner">
+        <div class="container front__events-inner" id="events">
           <h2 class="block-title front__events-title">Ближайшие мероприятия</h2>
           <ul class="front__events-list">
             <li class="front__card">
               <div class="front__card-media front__card-media--fade">
-                <img src="images/front/event.png" alt="" />
+                <img src="images/front/event1.jpg" alt="" />
               </div>
               <div class="front__card-body">
                 <div class="front__card-info">
                   <div class="front__card-meta">
                     <span class="front__card-meta-item">
                       <img src="images/front/calendar-gold.svg" alt="" />
-                      11 января 2027
+                      14 сентября 2026 — 30 апреля 2027
                     </span>
-                    <span class="front__card-meta-item">
+                    <!-- <span class="front__card-meta-item">
                       <img src="images/front/clock-gold.svg" alt="" />
                       16:00
+                    </span> -->
+                  </div>
+                  <h3 class="front__card-title">
+                    Экономика научного и технологического лидерства
+                  </h3>
+                </div>
+                <a class="front__btn-outline btn-outline" href="https://conference.spmi.ru/events/konkurs_nvp">Подробнее</a>
+              </div>
+            </li>
+            <li class="front__card">
+              <div class="front__card-media front__card-media--fade">
+                <img src="images/front/event2.jpg" alt="" />
+              </div>
+              <div class="front__card-body">
+                <div class="front__card-info">
+                  <div class="front__card-meta">
+                    <span class="front__card-meta-item">
+                      <img src="images/front/calendar-gold.svg" alt="" />
+                      1 октября 2026 — 30 марта 2027
                     </span>
                   </div>
                   <h3 class="front__card-title">
-                    Аэрология и техносферная безопасность. Всероссийская научная
-                    конференция
+                    Конкурс научно-исследовательских работ «Моя специальность»
                   </h3>
                 </div>
-                <a class="front__btn-outline btn-outline" href="1/index.html">Подробнее</a>
+                <a class="front__btn-outline btn-outline" href="https://conference.spmi.ru/events/vocation">Подробнее</a>
               </div>
             </li>
             <li class="front__card">
@@ -99,65 +118,43 @@
                   <div class="front__card-meta">
                     <span class="front__card-meta-item">
                       <img src="images/front/calendar-gold.svg" alt="" />
-                      11–16 января 2027
+                      1 октября 2026 — 27 февраля 2027
                     </span>
                   </div>
                   <h3 class="front__card-title">
-                    I Научно-практический семинар аспирантов, молодых учёных и
-                    студентов в области проектирования и строительства
+                    Конкурс научной фотографии и видеоматериалов «Моменты науки»
                   </h3>
                 </div>
-                <a class="front__btn-outline btn-outline" href="#">Подробнее</a>
+                <a class="front__btn-outline btn-outline" href="https://conference.spmi.ru/events/scisnap">Подробнее</a>
               </div>
             </li>
             <li class="front__card">
               <div class="front__card-media front__card-media--fade">
-                <img src="images/front/event.png" alt="" />
+                <img src="images/front/event4.jpg" alt="" />
               </div>
               <div class="front__card-body">
                 <div class="front__card-info">
                   <div class="front__card-meta">
                     <span class="front__card-meta-item">
                       <img src="images/front/calendar-gold.svg" alt="" />
-                      11 января – 16 февраля 2027
+                      14-18 декабря 2026
                     </span>
-                  </div>
-                  <h3 class="front__card-title">
-                    Инновационные направления в проектировании горнодобывающих
-                    предприятий: Безопасное и эффективное освоение месторождений
-                    полезных ископаемых
-                  </h3>
-                </div>
-                <a class="front__btn-outline btn-outline" href="#">Подробнее</a>
-              </div>
-            </li>
-            <li class="front__card">
-              <div class="front__card-media front__card-media--fade">
-                <img src="images/front/event.png" alt="" />
-              </div>
-              <div class="front__card-body">
-                <div class="front__card-info">
-                  <div class="front__card-meta">
-                    <span class="front__card-meta-item">
-                      <img src="images/front/calendar-gold.svg" alt="" />
-                      11 января 2027
-                    </span>
-                    <span class="front__card-meta-item">
+                    <!-- <span class="front__card-meta-item">
                       <img src="images/front/clock-gold.svg" alt="" />
                       16:00
-                    </span>
+                    </span> -->
                   </div>
                   <h3 class="front__card-title">
-                    Актуальные проблемы недропользования
+                    Подземное хранение энергоносителей. Наука, технологии и практика
                   </h3>
                 </div>
-                <a class="front__btn-outline btn-outline" href="#">Подробнее</a>
+                <a class="front__btn-outline btn-outline" href="https://conference.spmi.ru/events/energo">Подробнее</a>
               </div>
             </li>
           </ul>
           <div class="front__events-actions">
-            <a class="btn-primary" href="#">Все мероприятия</a>
-            <a class="front__btn-outline btn-outline btn-arrow" href="#">
+            <a class="btn-primary" href="events.html">Все мероприятия</a>
+            <a class="front__btn-outline btn-outline btn-arrow" href="https://spmi.ru/announcements">
               Календарь мероприятий
             </a>
           </div>
@@ -165,7 +162,7 @@
       </section>
 
       <section class="front__articles section-margin">
-        <div class="container front__articles-inner">
+        <div class="container front__articles-inner" id="news">
           <div class="front__head">
             <h2 class="block-title">Новости</h2>
             <div class="front__nav">
@@ -193,48 +190,42 @@
           </div>
           <div class="front__articles-slider keen-slider">
             <article class="keen-slider__slide front__article">
-              <img
+              <a href="https://forpost-sz.ru/a/2026-10-16/sankt-peterburgskij-gornyj-predlagaet-studentam-raskryt-issledovatelskie-talanty-v" class=""><img
                 class="front__article-image"
-                src="images/front/article.png"
+                src="images/front/article1.jpg"
                 alt=""
-              />
-              <p class="front__article-date">23.03.2025</p>
-              <h3 class="front__article-title">Победители конференции</h3>
+              /></a>
+              
+              <p class="front__article-date">19.10.2026</p>
+              <a href="https://forpost-sz.ru/a/2026-10-16/sankt-peterburgskij-gornyj-predlagaet-studentam-raskryt-issledovatelskie-talanty-v"><h3 class="front__article-title">Санкт-Петербургский Горный предлагает студентам раскрыть исследовательские таланты в научных конкурсах</h3></a>
               
             </article>
             <article class="keen-slider__slide front__article">
-              <img
+              <a href="https://forpost-sz.ru/spmi/2026-10-15/realnye-rezultaty-vtorogo-rossijsko-afrikanskogo-syrevogo-dialoga"><img
                 class="front__article-image"
-                src="images/front/article.png"
+                src="images/front/article2.jpg"
                 alt=""
-              />
-              <p class="front__article-date">23.03.2025</p>
-              <h3 class="front__article-title">Победители конференции</h3>
+              /></a>
+              
+              <p class="front__article-date">15.10.2026</p>
+              <a href="https://forpost-sz.ru/spmi/2026-10-15/realnye-rezultaty-vtorogo-rossijsko-afrikanskogo-syrevogo-dialoga"><h3 class="front__article-title">Реальные результаты Второго Российско-Африканского сырьевого диалога</h3></a>
+              
               
             </article>
             <article class="keen-slider__slide front__article">
-              <img
+              <a href="https://forpost-sz.ru/a/2026-04-10/v-sankt-peterburgskom-gornom-nazvali-imena-samykh-perspektivnykh-molodykh-uchenykh">  <img
                 class="front__article-image"
-                src="images/front/article.png"
+                src="images/front/article3.jpg"
                 alt=""
-              />
-              <p class="front__article-date">23.03.2025</p>
-              <h3 class="front__article-title">Победители конференции</h3>
-              
-            </article>
-            <article class="keen-slider__slide front__article">
-              <img
-                class="front__article-image"
-                src="images/front/article.png"
-                alt=""
-              />
-              <p class="front__article-date">23.03.2025</p>
-              <h3 class="front__article-title">Победители конференции</h3>
-              
-            </article>
+              /></a>
             
+              <p class="front__article-date">11.04.2026</p>
+             
+              <a href="https://forpost-sz.ru/a/2026-04-10/v-sankt-peterburgskom-gornom-nazvali-imena-samykh-perspektivnykh-molodykh-uchenykh"> <h3 class="front__article-title">В Санкт-Петербургском горном назвали имена самых перспективных молодых ученых России</h3></a>
+              
+            </article>
           </div>
-          <a class="btn-primary" href="#">Все новости</a>
+          <a class="btn-primary" href="https://forpost-sz.ru/spmi">Все новости</a>
         </div>
       </section>
 
@@ -282,7 +273,28 @@
                     Второй российско-африканский сырьевой диалог
                   </h3>
                 </div>
-                <a class="btn-primary btn-arrow front__conferences--btn" href="#">
+                <a class="btn-primary btn-arrow front__conferences--btn" href="https://africa.spmi.ru/">
+                  Перейти на сайт
+                </a>
+              </div>
+            </article>
+            <article class="keen-slider__slide front__card front__conf-card">
+              <div class="front__card-media">
+                <img src="images/front/forum2.jpg" alt="" />
+              </div>
+              <div class="front__card-body">
+                <div class="front__card-info">
+                  <div class="front__card-meta">
+                    <span class="front__card-meta-item">
+                      <img src="images/front/calendar-gold.svg" alt="" />
+                      12–17 октября 2026 года
+                    </span>
+                  </div>
+                  <h3 class="front__conference-title">
+                    Российско-африканский форум-конкурс молодых ученых под эгидой ЮНЕСКО
+                  </h3>
+                </div>
+                <a class="btn-primary btn-arrow front__conferences--btn" href="https://youthafrica.spmi.ru/">
                   Перейти на сайт
                 </a>
               </div>
@@ -291,7 +303,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer section-margin">
       <div class="container footer__inner">
         <div class="footer__content">
@@ -301,10 +312,10 @@
             </p>
             <a class="footer__email" href="mailto:site@spmi.ru">site@spmi.ru</a>
           </div>
-          <a class="footer__policy" href="#"
+          <a class="footer__policy" href="https://spmi.ru/cookie-files"
             >Политика использования cookie-файлов</a
           >
-          <a class="footer__policy" href="#">Политика конфиденциальности</a>
+          <a class="footer__policy" href="https://spmi.ru/politika_pers_dannye">Политика конфиденциальности</a>
         </div>
         <div class="footer__bottom">
           <div class="footer__divider"></div>
