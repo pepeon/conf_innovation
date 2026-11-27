@@ -82,6 +82,17 @@ background: #036;;
   padding-right: var(--container-gutter);
   border-radius: 16px;
 }
+.scale-hover:hover img{
+  transform: scale(1.04);
+
+}
+.scale-hover--block{
+  overflow: hidden;
+}
+.scale-hover--img{
+  transition: transform .4s ease;
+    will-change: transform;
+}
 
 .link:hover,
 .footer a:hover,
@@ -762,7 +773,6 @@ background: #036;;
 .partners__slide {
   display: flex;
 }
-
 .partners__card {
   display: flex;
   align-items: center;
@@ -1085,6 +1095,19 @@ background: #036;;
   flex-direction: column;
   gap: 4px;
 }
+.contacts__person-link{
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 140%;
+letter-spacing: -0.02em;
+color: #004a94;
+}
+.contacts__persons{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
 .contacts__person-name {
   margin: 0;
@@ -1175,6 +1198,11 @@ background: #036;;
   letter-spacing: -0.02em;
   color: #1d1d1f;
 }
+.footer__question,
+.footer__email,
+.footer__policy{
+width: fit-content;
+}
 
 .footer__email {
   font-family: var(--font-family), sans-serif;
@@ -1198,6 +1226,7 @@ background: #036;;
   flex-direction: column;
   gap: 16px;
 }
+
 
 .footer__divider {
   width: 100%;
@@ -1321,6 +1350,9 @@ background: #036;;
 }
 
 @media (min-width: 500px) {
+  .accordion__panel{
+    padding: 24px;
+  }
   .breadcrumb a,
   .breadcrumb li.is-active::before {
     color: #004a94;
@@ -1344,9 +1376,7 @@ background: #036;;
     width: fit-content;
     height: 100%;
   }
-  .accordion__panel {
-    padding: 24px;
-  }
+
   .session-text {
     padding: 24px;
     padding-top: 0;
@@ -1536,9 +1566,8 @@ background: #036;;
 
 /* ≥ 1400 — «1400 Страница конференции» */
 @media (min-width: 1400px) {
-    .breadcrumbs-line{
-
-  }
+ 
+    
   .footer__inner {
     padding-top: 80px;
     padding-bottom: 64px;
@@ -1627,6 +1656,14 @@ background: #036;;
 
   .block-title {
     font-size: 40px;
+  }
+   .accordion__conditions {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .accordion__conditions .accordion__block{
+    max-width: 804px; 
+    width: 100%;
   }
 }
 

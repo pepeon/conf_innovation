@@ -23,8 +23,8 @@
           <img class="site-header__brand-logo" src="1/images/logo.svg" />
         </a>
         <nav class="main-menu" aria-label="Главное меню">
-          <a class="main-menu__link link" href="#events"> Ближайшие мероприятия </a>
-          <a class="main-menu__link link" href="#news"> Новости </a>
+          <a class="main-menu__link link" href="/#events"> Ближайшие мероприятия </a>
+          <a class="main-menu__link link" href="/#news"> Новости </a>
           <a class="main-menu__link link" href="events.html"> Все мероприятия </a>
         </nav>
         <button
@@ -52,120 +52,116 @@
         <a class="nav__link link" href="#"> Все мероприятия </a>
       </nav>
     </header>
-    <main class="front">
-            <section class="front__events section-margin">
-        <div class="container front__events-inner">
-          <h2 class="block-title front__events-title">Ближайшие мероприятия</h2>
-          <ul class="front__events-list">
-            <li class="front__card">
-              <div class="front__card-media front__card-media--fade">
-                <img src="images/front/event1.jpg" alt="" />
-              </div>
-              <div class="front__card-body">
-                <div class="front__card-info">
-                  <div class="front__card-meta">
-                    <span class="front__card-meta-item">
+    <main class="events-page">
+      <section class="container breadcrumb">
+        <div class="breadcrumbs-line">
+          <nav role="navigation" aria-labelledby="system-breadcrumb">
+            <ul>
+              <li>
+                <a class="breadcrumb__link link" href="/">Главная</a>
+              </li>
+              <li class="is-active">
+                <a href="#" aria-current="page">Все мероприятия</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="events-page__section">
+        <div class="container">
+          <ul class="events-page__list">
+            <li class="events-page__card scale-hover">
+              <div class="scale-hover--block event-page__image"><img class="events-page__image scale-hover--img" src="images/front/event1.jpg" alt="" /></div>
+              
+              <div class="events-page__body">
+                <div class="events-page__info">
+                  <div class="events-page__meta">
+                    <span class="events-page__meta-item">
                       <img src="images/front/calendar-gold.svg" alt="" />
                       14 сентября 2026 — 30 апреля 2027
                     </span>
-                    <!-- <span class="front__card-meta-item">
-                      <img src="images/front/clock-gold.svg" alt="" />
-                      16:00
-                    </span> -->
                   </div>
-                  <h3 class="front__card-title">
+                  <h3 class="events-page__title">
                     Экономика научного и технологического лидерства
                   </h3>
                 </div>
-                <a class="front__btn-outline btn-outline" href="https://conference.spmi.ru/events/konkurs_nvp">Подробнее</a>
+                <a class="btn-outline" href="https://conference.spmi.ru/events/konkurs_nvp">Подробнее</a>
               </div>
             </li>
-            <li class="front__card">
-              <div class="front__card-media front__card-media--fade">
-                <img src="images/front/event2.jpg" alt="" />
-              </div>
-              <div class="front__card-body">
-                <div class="front__card-info">
-                  <div class="front__card-meta">
-                    <span class="front__card-meta-item">
+            <li class="events-page__card scale-hover">
+              <div class="scale-hover--block event-page__image"><img class="events-page__image scale-hover--img" src="images/front/event2.jpg" alt="" /></div>
+              <div class="events-page__body">
+                <div class="events-page__info">
+                  <div class="events-page__meta">
+                    <span class="events-page__meta-item">
                       <img src="images/front/calendar-gold.svg" alt="" />
                       1 октября 2026 — 30 марта 2027
                     </span>
                   </div>
-                  <h3 class="front__card-title">
+                  <h3 class="events-page__title">
                     Конкурс научно-исследовательских работ «Моя специальность»
                   </h3>
                 </div>
-                <a class="front__btn-outline btn-outline" href="https://conference.spmi.ru/events/vocation">Подробнее</a>
+                <a class="btn-outline" href="https://conference.spmi.ru/events/vocation">Подробнее</a>
               </div>
             </li>
-            <li class="front__card">
-              <div class="front__card-media front__card-media--fade">
-                <img src="images/front/event.png" alt="" />
-              </div>
-              <div class="front__card-body">
-                <div class="front__card-info">
-                  <div class="front__card-meta">
-                    <span class="front__card-meta-item">
+            <li class="events-page__card scale-hover">
+              <div class="scale-hover--block event-page__image"><img class="events-page__image scale-hover--img" src="images/front/event.png" alt="" /></div>
+              <div class="events-page__body">
+                <div class="events-page__info">
+                  <div class="events-page__meta">
+                    <span class="events-page__meta-item">
                       <img src="images/front/calendar-gold.svg" alt="" />
                       1 октября 2026 — 27 февраля 2027
                     </span>
                   </div>
-                  <h3 class="front__card-title">
+                  <h3 class="events-page__title">
                     Конкурс научной фотографии и видеоматериалов «Моменты науки»
                   </h3>
                 </div>
-                <a class="front__btn-outline btn-outline" href="https://conference.spmi.ru/events/energo">Подробнее</a>
+                <a class="btn-outline" href="https://conference.spmi.ru/events/energo">Подробнее</a>
               </div>
             </li>
-            <li class="front__card">
-              <div class="front__card-media front__card-media--fade">
-                <img src="images/front/event4.jpg" alt="" />
-              </div>
-              <div class="front__card-body">
-                <div class="front__card-info">
-                  <div class="front__card-meta">
-                    <span class="front__card-meta-item">
+            <li class="events-page__card scale-hover">
+              <div class="scale-hover--block event-page__image"><img class="events-page__image scale-hover--img" src="images/front/event4.jpg" alt="" /></div>
+              <div class="events-page__body">
+                <div class="events-page__info">
+                  <div class="events-page__meta">
+                    <span class="events-page__meta-item">
                       <img src="images/front/calendar-gold.svg" alt="" />
                       14-18 декабря 2026
                     </span>
-                    <!-- <span class="front__card-meta-item">
-                      <img src="images/front/clock-gold.svg" alt="" />
-                      16:00
-                    </span> -->
                   </div>
-                  <h3 class="front__card-title">
+                  <h3 class="events-page__title">
                     Подземное хранение энергоносителей. Наука, технологии и практика
                   </h3>
                 </div>
-                <a class="front__btn-outline btn-outline" href="https://conference.spmi.ru/events/energo">Подробнее</a>
+                <a class="btn-outline" href="https://conference.spmi.ru/events/energo">Подробнее</a>
               </div>
             </li>
-            <li class="front__card">
-              <div class="front__card-media front__card-media--fade">
-                <img src="images/front/event5.jpg" alt="" />
-              </div>
-              <div class="front__card-body">
-                <div class="front__card-info">
-                  <div class="front__card-meta">
-                    <span class="front__card-meta-item">
+            <li class="events-page__card scale-hover">
+              <div class="scale-hover--block event-page__image"><img class="events-page__image scale-hover--img" src="images/front/event5.jpg" alt="" /></div>
+              <div class="events-page__body">
+                <div class="events-page__info">
+                  <div class="events-page__meta">
+                    <span class="events-page__meta-item">
                       <img src="images/front/calendar-gold.svg" alt="" />
                       14 сентября — 18 декабря 2026
                     </span>
-                    <!-- <span class="front__card-meta-item">
-                      <img src="images/front/clock-gold.svg" alt="" />
-                      16:00
-                    </span> -->
                   </div>
-                  <h3 class="front__card-title">
+                  <h3 class="events-page__title">
                     Горный старт: первый шаг в науку
                   </h3>
                 </div>
-                <a class="front__btn-outline btn-outline" href="https://conference.spmi.ru/events/start">Подробнее</a>
+                <a class="btn-outline" href="https://conference.spmi.ru/events/start">Подробнее</a>
               </div>
             </li>
           </ul>
-          </div>
+          <!-- <nav class="events-page__pagination" aria-label="Страницы">
+            <a class="events-page__page events-page__page--current" href="#" aria-current="page">1</a>
+            <a class="events-page__page" href="#">2</a>
+            <a class="events-page__page" href="#">3</a>
+          </nav> -->
         </div>
       </section>
     </main>
